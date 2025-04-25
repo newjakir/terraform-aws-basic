@@ -1,0 +1,384 @@
+jakir@JacksMac m5-terraform-aws % terraform init
+Initializing the backend...
+Initializing provider plugins...
+- Finding hashicorp/aws versions matching "5.96.0"...
+- Installing hashicorp/aws v5.96.0...
+- Installed hashicorp/aws v5.96.0 (signed by HashiCorp)
+Terraform has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run "terraform init" in the future.
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+jakir@JacksMac m5-terraform-aws % 
+jakir@JacksMac m5-terraform-aws % 
+jakir@JacksMac m5-terraform-aws % 
+jakir@JacksMac m5-terraform-aws % terraform plan
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
+
+jakir@JacksMac m5-terraform-aws % 
+jakir@JacksMac m5-terraform-aws % brew install awscli
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+==> Downloading https://formulae.brew.sh/api/cask.jws.json
+==> Downloading https://ghcr.io/v2/homebrew/core/awscli/manifests/2.27.1
+############################################################################################################################################################################################################# 100.0%
+==> Fetching dependencies for awscli: pycparser, cffi, ca-certificates, openssl@3, cryptography, mpdecimal, readline, sqlite and python@3.13
+==> Downloading https://ghcr.io/v2/homebrew/core/pycparser/manifests/2.22_1
+############################################################################################################################################################################################################# 100.0%
+==> Fetching pycparser
+==> Downloading https://ghcr.io/v2/homebrew/core/pycparser/blobs/sha256:96eddd22a812be4f919562d6525ab8fa19b03b700426d2fbf892da0f4fd02e73
+############################################################################################################################################################################################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/cffi/manifests/1.17.1_1
+############################################################################################################################################################################################################# 100.0%
+==> Fetching cffi
+==> Downloading https://ghcr.io/v2/homebrew/core/cffi/blobs/sha256:908333c6c31b4da4876ccb707cdf2b1ec52aee3d83fc3c4a1b8b52f148883512
+############################################################################################################################################################################################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2025-02-25
+############################################################################################################################################################################################################# 100.0%
+==> Fetching ca-certificates
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8f46fb05f753f80f2bc398c0a24b10d680bd77d496e2b931de0b61998e37aebc
+############################################################################################################################################################################################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.4.1
+############################################################################################################################################################################################################# 100.0%
+==> Fetching openssl@3
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:b20c7d9b63e7b320cba173c11710dee9888c77175a841031d7a245bb37355b98
+############################################################################################################################################################################################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/cryptography/manifests/44.0.2
+############################################################################################################################################################################################################# 100.0%
+==> Fetching cryptography
+==> Downloading https://ghcr.io/v2/homebrew/core/cryptography/blobs/sha256:3c0211c9200c69fd4502e667237724d03d527c88de7c3e5c6c7a3b6a00ff9123
+############################################################################################################################################################################################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+############################################################################################################################################################################################################# 100.0%
+==> Fetching mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:0f5f269bed0e6be2de3edfc4b52867e656f993e5bcff40717f26ee94dd0d2211
+############################################################################################################################################################################################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+############################################################################################################################################################################################################# 100.0%
+==> Fetching readline
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:738c27ceee9a8b198f98438477ef7a513a96a965e3a434ac3aa8fb4ed76494b1
+############################################################################################################################################################################################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.49.1
+############################################################################################################################################################################################################# 100.0%
+==> Fetching sqlite
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:757c3d60f4d35fe1c3336207d63992fc804fa6ddd2c40ebb84eb7bfa07bc69e1
+############################################################################################################################################################################################################# 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.13/manifests/3.13.3-1
+############################################################################################################################################################################################################# 100.0%
+==> Fetching python@3.13
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.13/blobs/sha256:243ab8eec20fbc33c7d6760af6097842a400a9e67c07316cbc9b8de4c2762df7
+############################################################################################################################################################################################################# 100.0%
+==> Fetching awscli
+==> Downloading https://ghcr.io/v2/homebrew/core/awscli/blobs/sha256:695bfaff0fe4f123e22dced6fdc221b84a8d0bccf24dd5ec283a0a8a39ec9ee3
+############################################################################################################################################################################################################# 100.0%
+==> Installing dependencies for awscli: pycparser, cffi, ca-certificates, openssl@3, cryptography, mpdecimal, readline, sqlite and python@3.13
+==> Installing awscli dependency: pycparser
+==> Downloading https://ghcr.io/v2/homebrew/core/pycparser/manifests/2.22_1
+Already downloaded: /Users/jakir/Library/Caches/Homebrew/downloads/bcc371a4c6cfaae40014a9277121028f0f532091988cdacb4d8c23556d3e5b96--pycparser-2.22_1.bottle_manifest.json
+==> Pouring pycparser--2.22_1.all.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pycparser/2.22_1: 98 files, 1.8MB
+==> Installing awscli dependency: cffi
+==> Downloading https://ghcr.io/v2/homebrew/core/cffi/manifests/1.17.1_1
+Already downloaded: /Users/jakir/Library/Caches/Homebrew/downloads/b99b4f0faeabe37a71351274b07e8ee17f52d483de3a33efa3e00bc1d76401d2--cffi-1.17.1_1.bottle_manifest.json
+==> Pouring cffi--1.17.1_1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/cffi/1.17.1_1: 96 files, 1.7MB
+==> Installing awscli dependency: ca-certificates
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2025-02-25
+Already downloaded: /Users/jakir/Library/Caches/Homebrew/downloads/6c1debb525d4dc6007afae4cd2b772105111632b22fc28506550f6dfe27c6d52--ca-certificates-2025-02-25.bottle_manifest.json
+==> Pouring ca-certificates--2025-02-25.all.bottle.tar.gz
+==> Regenerating CA certificate bundle from keychain, this may take a while...
+🍺  /opt/homebrew/Cellar/ca-certificates/2025-02-25: 4 files, 235.9KB
+==> Installing awscli dependency: openssl@3
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/manifests/3.4.1
+Already downloaded: /Users/jakir/Library/Caches/Homebrew/downloads/a2bb8b71ebddb1fe8553581fcbc1ffc4ab36795c68b3cd47977cf83f1673a5b1--openssl@3-3.4.1.bottle_manifest.json
+==> Pouring openssl@3--3.4.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openssl@3/3.4.1: 7,236 files, 33.4MB
+==> Installing awscli dependency: cryptography
+==> Downloading https://ghcr.io/v2/homebrew/core/cryptography/manifests/44.0.2
+Already downloaded: /Users/jakir/Library/Caches/Homebrew/downloads/3888b648a3e629dd1ddf9c6083cbb6d99bdd608a143bf25738132a37ce4384c5--cryptography-44.0.2.bottle_manifest.json
+==> Pouring cryptography--44.0.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/cryptography/44.0.2: 232 files, 8.9MB
+==> Installing awscli dependency: mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+Already downloaded: /Users/jakir/Library/Caches/Homebrew/downloads/7b63c3b34bee402290af49fac829a6682ab45ea5c9258b6fe03b590a03a4c4a9--mpdecimal-4.0.0-1.bottle_manifest.json
+==> Pouring mpdecimal--4.0.0.arm64_sequoia.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/mpdecimal/4.0.0: 22 files, 641.3KB
+==> Installing awscli dependency: readline
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+Already downloaded: /Users/jakir/Library/Caches/Homebrew/downloads/aa1afa38997a2866d91c81fdda8b36d436cd4ea7a82aed07d13c83c56eb3460e--readline-8.2.13.bottle_manifest.json
+==> Pouring readline--8.2.13.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/readline/8.2.13: 51 files, 1.7MB
+==> Installing awscli dependency: sqlite
+==> Downloading https://ghcr.io/v2/homebrew/core/sqlite/manifests/3.49.1
+Already downloaded: /Users/jakir/Library/Caches/Homebrew/downloads/ce3cf24bf33f0eff2d169e046ba5da3ec75ab9fe0439e7b7face44f42e033fcb--sqlite-3.49.1.bottle_manifest.json
+==> Pouring sqlite--3.49.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/sqlite/3.49.1: 13 files, 4.7MB
+==> Installing awscli dependency: python@3.13
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.13/manifests/3.13.3-1
+Already downloaded: /Users/jakir/Library/Caches/Homebrew/downloads/c1320fdecb7ec29ab4a10c506bbe39179751a95489af3414b3a4acce32721cc0--python@3.13-3.13.3-1.bottle_manifest.json
+==> Pouring python@3.13--3.13.3.arm64_sequoia.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/python@3.13/3.13.3: 3,598 files, 66.7MB
+==> Installing awscli
+==> Pouring awscli--2.27.1.arm64_sequoia.bottle.tar.gz
+==> Caveats
+The "examples" directory has been installed to:
+  /opt/homebrew/share/awscli/examples
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Summary
+🍺  /opt/homebrew/Cellar/awscli/2.27.1: 14,321 files, 131.7MB
+==> Running `brew cleanup awscli`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> awscli
+The "examples" directory has been installed to:
+  /opt/homebrew/share/awscli/examples
+
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+jakir@JacksMac m5-terraform-aws % 
+jakir@JacksMac m5-terraform-aws % 
+
+
+jakir@JacksMac terraform-aws-basic % aws configure --profile jakir
+AWS Access Key ID [None]: IAM_ACCESS_KEY
+AWS Secret Access Key [None]: IAM_SECRET_KEY
+Default region name [None]: ap-southeast-1
+Default output format [None]: text
+jakir@JacksMac terraform-aws-basic % 
+jakir@JacksMac terraform-aws-basic % 
+jakir@JacksMac terraform-aws-basic % 
+jakir@JacksMac terraform-aws-basic % 
+
+jakir@JacksMac terraform-aws-basic % terraform apply
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_instance.app_server will be created
+  + resource "aws_instance" "app_server" {
+      + ami                                  = "ami-01938df366ac2d954"
+      + arn                                  = (known after apply)
+      + associate_public_ip_address          = (known after apply)
+      + availability_zone                    = (known after apply)
+      + cpu_core_count                       = (known after apply)
+      + cpu_threads_per_core                 = (known after apply)
+      + disable_api_stop                     = (known after apply)
+      + disable_api_termination              = (known after apply)
+      + ebs_optimized                        = (known after apply)
+      + enable_primary_ipv6                  = (known after apply)
+      + get_password_data                    = false
+      + host_id                              = (known after apply)
+      + host_resource_group_arn              = (known after apply)
+      + iam_instance_profile                 = (known after apply)
+      + id                                   = (known after apply)
+      + instance_initiated_shutdown_behavior = (known after apply)
+      + instance_lifecycle                   = (known after apply)
+      + instance_state                       = (known after apply)
+      + instance_type                        = "t2.micro"
+      + ipv6_address_count                   = (known after apply)
+      + ipv6_addresses                       = (known after apply)
+      + key_name                             = (known after apply)
+      + monitoring                           = (known after apply)
+      + outpost_arn                          = (known after apply)
+      + password_data                        = (known after apply)
+      + placement_group                      = (known after apply)
+      + placement_partition_number           = (known after apply)
+      + primary_network_interface_id         = (known after apply)
+      + private_dns                          = (known after apply)
+      + private_ip                           = (known after apply)
+      + public_dns                           = (known after apply)
+      + public_ip                            = (known after apply)
+      + secondary_private_ips                = (known after apply)
+      + security_groups                      = (known after apply)
+      + source_dest_check                    = true
+      + spot_instance_request_id             = (known after apply)
+      + subnet_id                            = (known after apply)
+      + tags                                 = {
+          + "Name" = "ExampleAppServerInstance"
+        }
+      + tags_all                             = {
+          + "Name" = "ExampleAppServerInstance"
+        }
+      + tenancy                              = (known after apply)
+      + user_data                            = (known after apply)
+      + user_data_base64                     = (known after apply)
+      + user_data_replace_on_change          = false
+      + vpc_security_group_ids               = (known after apply)
+
+      + capacity_reservation_specification (known after apply)
+
+      + cpu_options (known after apply)
+
+      + ebs_block_device (known after apply)
+
+      + enclave_options (known after apply)
+
+      + ephemeral_block_device (known after apply)
+
+      + instance_market_options (known after apply)
+
+      + maintenance_options (known after apply)
+
+      + metadata_options (known after apply)
+
+      + network_interface (known after apply)
+
+      + private_dns_name_options (known after apply)
+
+      + root_block_device (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+aws_instance.app_server: Creating...
+aws_instance.app_server: Still creating... [10s elapsed]
+aws_instance.app_server: Creation complete after 15s [id=i-021eb4876d43a7b36]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+jakir@JacksMac terraform-aws-basic % terraform destroy
+aws_instance.app_server: Refreshing state... [id=i-021eb4876d43a7b36]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_instance.app_server will be destroyed
+  - resource "aws_instance" "app_server" {
+      - ami                                  = "ami-01938df366ac2d954" -> null
+      - arn                                  = "arn:aws:ec2:ap-southeast-1:280422613437:instance/i-021eb4876d43a7b36" -> null
+      - associate_public_ip_address          = true -> null
+      - availability_zone                    = "ap-southeast-1a" -> null
+      - cpu_core_count                       = 1 -> null
+      - cpu_threads_per_core                 = 1 -> null
+      - disable_api_stop                     = false -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - id                                   = "i-021eb4876d43a7b36" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "running" -> null
+      - instance_type                        = "t2.micro" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - placement_partition_number           = 0 -> null
+      - primary_network_interface_id         = "eni-02c8e2e5edf251f9d" -> null
+      - private_dns                          = "ip-172-31-25-161.ap-southeast-1.compute.internal" -> null
+      - private_ip                           = "172.31.25.161" -> null
+      - public_dns                           = "ec2-47-128-239-91.ap-southeast-1.compute.amazonaws.com" -> null
+      - public_ip                            = "47.128.239.91" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [
+          - "default",
+        ] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-09e4ea3f23afa6f8d" -> null
+      - tags                                 = {
+          - "Name" = "ExampleAppServerInstance"
+        } -> null
+      - tags_all                             = {
+          - "Name" = "ExampleAppServerInstance"
+        } -> null
+      - tenancy                              = "default" -> null
+      - user_data_replace_on_change          = false -> null
+      - vpc_security_group_ids               = [
+          - "sg-0877b8f6fd0105367",
+        ] -> null
+        # (8 unchanged attributes hidden)
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - cpu_options {
+          - core_count       = 1 -> null
+          - threads_per_core = 1 -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - credit_specification {
+          - cpu_credits = "standard" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - maintenance_options {
+          - auto_recovery = "default" -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_protocol_ipv6          = "disabled" -> null
+          - http_put_response_hop_limit = 2 -> null
+          - http_tokens                 = "required" -> null
+          - instance_metadata_tags      = "disabled" -> null
+        }
+
+      - private_dns_name_options {
+          - enable_resource_name_dns_a_record    = false -> null
+          - enable_resource_name_dns_aaaa_record = false -> null
+          - hostname_type                        = "ip-name" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/sda1" -> null
+          - encrypted             = false -> null
+          - iops                  = 3000 -> null
+          - tags                  = {} -> null
+          - tags_all              = {} -> null
+          - throughput            = 125 -> null
+          - volume_id             = "vol-0d231505f0e0aaa52" -> null
+          - volume_size           = 8 -> null
+          - volume_type           = "gp3" -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+Plan: 0 to add, 0 to change, 1 to destroy.
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+aws_instance.app_server: Destroying... [id=i-021eb4876d43a7b36]
+aws_instance.app_server: Still destroying... [id=i-021eb4876d43a7b36, 10s elapsed]
+aws_instance.app_server: Still destroying... [id=i-021eb4876d43a7b36, 20s elapsed]
+aws_instance.app_server: Still destroying... [id=i-021eb4876d43a7b36, 30s elapsed]
+aws_instance.app_server: Still destroying... [id=i-021eb4876d43a7b36, 40s elapsed]
+aws_instance.app_server: Still destroying... [id=i-021eb4876d43a7b36, 50s elapsed]
+aws_instance.app_server: Still destroying... [id=i-021eb4876d43a7b36, 1m0s elapsed]
+aws_instance.app_server: Still destroying... [id=i-021eb4876d43a7b36, 1m10s elapsed]
+aws_instance.app_server: Still destroying... [id=i-021eb4876d43a7b36, 1m20s elapsed]
+aws_instance.app_server: Destruction complete after 1m22s
+
+Destroy complete! Resources: 1 destroyed.
+jakir@JacksMac terraform-aws-basic % 
